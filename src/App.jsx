@@ -1,12 +1,11 @@
+import "./layout.scss";
+import Navbar from "./layouts/navbar/Navbar";
 
 
-
-
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello, App presidential campaigns</h1>
+    <div className="layout">
+      <Navbar />
     </div>
   );
 }
