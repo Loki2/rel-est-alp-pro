@@ -1,0 +1,41 @@
+.home__page {
+  display: flex;
+  height: 100%;
+
+
+  .text__container {
+    flex: 3;
+
+    .wrapper {
+      height: 100%;
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      gap: 50px;
+
+      .title {
+        font-size: 36px;
+      }
+
+      .boxes__container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .image__container {
+    flex: 2;
+    background-color: #fcf5f3;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 115%;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

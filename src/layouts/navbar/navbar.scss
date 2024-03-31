@@ -1,3 +1,6 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mixin.scss";
+
 .navbar {
   height: 100px;
   display: flex;
@@ -8,6 +11,9 @@
     cursor: pointer;
     transition: all 0.4s ease;
 
+    @include sm {
+      display: none;
+    }
 
     &:hover {
       scale: 1.05;
@@ -30,6 +36,17 @@
       img {
         width: 28px;
       }
+
+      span {
+
+        @include md {
+          display: none;
+        }
+
+        @include sm {
+          display: initial;
+        }
+      }
     }
   }
 
@@ -41,6 +58,10 @@
     justify-content: flex-end;
     background-color: #fcf5f3;
 
+    @include md {
+      background-color: transparent;
+    }
+
     a {
       padding: 12px 24px;
       margin: 20px;
@@ -50,6 +71,48 @@
 
     .btn_register {
       background-color: #fece51;
+    }
+
+    .menu__bar {
+      display: none;
+      z-index: 999;
+
+      .menu__icon {
+        font-size: 26px;
+        color: #fcf5f3;
+        cursor: pointer;
+
+      }
+
+      @include sm {
+        display: initial;
+      }
+    }
+
+    .menu__list {
+      position: absolute;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      width: 50%;
+      top: 0;
+      right: - 50%;
+      transition: all 1s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      font-size: 24px;
+
+      &.active {
+        right: 0;
+      }
+
+      @include sm {
+        a {
+          display: initial;
+        }
+      }
     }
   }
 }
