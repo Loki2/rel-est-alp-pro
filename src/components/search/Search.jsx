@@ -1,9 +1,40 @@
+import { BsSearch } from "react-icons/bs";
+import "./search.scss";
+import { useState } from "react";
+
+const types = ["buy", "rent"];
 
 
 const SearchBar = () => {
+  const [query, setQuery] = useState({
+    type: "buy",
+    location: "",
+    minPrice: 0,
+    maxPrice: 0
+  });
+
+  const switchType = (val) => {
+    setQuery(prev => ({ ...prev, type: val }))
+  }
+
   return (
     <div className="search__bar__container">
-      <h1>Search Container</h1>
+      <div className="type__search">
+        {
+          types.map(type => (
+            <button key={type} onClick={() => switchType(type)} className={query.type === type ? "active" : ""} >{type}</button>
+          ))
+        }
+      </div>
+      <form>
+        <input type="text" name="location" placeholder="City Location" />
+        <input type="number" name="minPrice" min={0} max={1000000} placeholder="Min Price" />
+        <input type="number" name="maxPrice" min={0} max={1000000} placeholder="Max Price" />
+        <button>
+          <BsSearch className="btn__search__icon" />
+        </button>
+      </form>
+
     </div>
   )
 }
