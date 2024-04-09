@@ -1,7 +1,9 @@
+@import "../../styles/mixin";
+@import "../../styles/variable";
+
 .home__page {
   display: flex;
   height: 100%;
-
 
   .text__container {
     flex: 3;
@@ -11,16 +13,53 @@
       padding-right: 100px;
       display: flex;
       flex-direction: column;
-      justify-items: center;
+      justify-content: center;
       gap: 50px;
+
+      @include md {
+        padding: 0;
+      }
+
+      @include sm {
+        justify-content: flex-start;
+      }
 
       .title {
         font-size: 36px;
+
+        @include lg {
+          font-size: 48px;
+        }
       }
 
       .boxes__container {
         display: flex;
         justify-content: space-between;
+
+        @include sm {
+          display: none;
+        }
+
+        .box__item {
+
+          h1 {
+            font-size: 36px;
+            font-weight: 400;
+
+            @include lg {
+              font-size: 32px;
+            }
+          }
+
+          h3 {
+            font-size: 20px;
+            font-weight: 200;
+
+            @include lg {
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
   }
@@ -36,6 +75,14 @@
       width: 115%;
       position: absolute;
       right: 0;
+
+      @include lg {
+        width: 105%;
+      }
+    }
+
+    @include md {
+      display: none;
     }
   }
 }
