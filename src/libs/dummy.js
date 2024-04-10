@@ -95,4 +95,39 @@ export const products = [
     latitude: 51.5074,
     longitude: -0.1278
   },
-]
+];
+
+
+export const productData = {
+  id: 1,
+  title: "A Great Beautiful apartment near the beach",
+  description: "A Great Beautiful apartment near the beach with full moon view at night and It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+  price: 320,
+  images_urls: [
+    "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/276554/pexels-photo-276554.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/323772/pexels-photo-323772.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "https://images.pexels.com/photos/923282/pexels-photo-923282.jpeg?auto=compress&cs=tinysrgb&w=800",
+  ],
+  bed_rooms: 2,
+  bath_rooms: 1,
+  size: 835,
+  latitude: 51.5074,
+  longitude: -0.1278,
+  city: "London",
+  address: "234 Broadway St",
+  school: "250m way",
+  bus: "100m way",
+  restaurant: "150m way",
+  type: "rent",
+}
+
+export const userData = {
+  id: 1,
+  username: "@Loki",
+  fullName: "Loki Sounikorn",
+  price: 320,
+  profile_url: "https://images.pexels.com/photos/923282/pexels-photo-923282.jpeg?auto=compress&cs=tinysrgb&w=800",
+}
