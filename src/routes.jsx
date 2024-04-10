@@ -4,6 +4,7 @@ import {
 import Layout from "./layouts/Layout";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/products";
+import Product from "./pages/product/product";
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Agent from "./pages/agent/Agent";
@@ -28,7 +29,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/:productId",
-        element: <Products />
+        element: <Product />
       },
       {
         path: "/about",
