@@ -1,0 +1,22 @@
+.popup__container {
+  display: flex;
+  gap: 20px;
+
+  img {
+    width: 48px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import "./product.scss";
 
 const Product = () => {
   return (
-    <div>Product</div>
+    <div>Product View</div>
   )
 }
 

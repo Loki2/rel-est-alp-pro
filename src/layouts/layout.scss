@@ -6,7 +6,6 @@
 .layout {
   height: 100vh;
   max-width: 1366px;
-  // background-color: purple;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -27,6 +26,6 @@
   }
 
   .container {
-    flex: 1;
+    height: calc(100vh - 100px);
   }
 }
