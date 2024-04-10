@@ -1,0 +1,24 @@
+@import "../../styles/mixin";
+@import "../../styles/variable";
+
+.product__view__page {
+  display: flex;
+  height: 100%;
+
+  .product__detail {
+    flex: 3;
+
+    .product__detail__wrapper {
+      padding-right: 20px;
+    }
+  }
+
+  .product__features {
+    flex: 2;
+    background-color: #fcf5f3;
+
+    .product__features__wrapper {
+      padding: 0 20px;
+    }
+  }
+}
