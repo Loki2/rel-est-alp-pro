@@ -12,7 +12,7 @@ const Product = () => {
     <div className='product__view__page'>
       <div className="product__detail">
         <div className="product__detail__wrapper">
-          <Slider productImages={productData.images_urls} />
+          <Slider images={productData.images_urls} />
 
           <div className="product__information">
             <div className="product__info__top">
