@@ -4,9 +4,23 @@
 .product__view__page {
   display: flex;
   height: 100%;
+  z-index: 1;
+
+  @include md {
+    flex-direction: column;
+    gap: 20px;
+    overflow: scroll;
+  }
 
   .product__detail {
     flex: 3;
+    height: 100%;
+    overflow-y: scroll;
+
+    @include md {
+      flex: none;
+      height: max-content;
+    }
 
     .product__detail__wrapper {
       padding-right: 20px;
@@ -85,10 +99,84 @@
 
   .product__features {
     flex: 2;
+    height: 100%;
+    overflow-y: scroll;
     background-color: #fcf5f3;
+
+    @include md {
+      flex: none;
+      height: max-content;
+    }
 
     .product__features__wrapper {
       padding: 0 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+
+      .feature__title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .list__feature {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .list__feature__icon {
+          font-size: 26px;
+          color: orange;
+        }
+      }
+
+      .list__vertical {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        background-color: white;
+        gap: 20px;
+        border-radius: 10px;
+      }
+
+      .list__horizontal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .map__container {
+        position: relative;
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 10px;
+
+        button {
+          display: flex;
+          align-items: center;
+          border: none;
+          font-size: 16px;
+          font-weight: 300;
+          padding: 5px 10px;
+          background-color: white;
+          border: 1px solid orange;
+          border-radius: 5px;
+          cursor: pointer;
+
+          .action__icon {
+            font-size: 26px;
+          }
+        }
+      }
     }
   }
 }
