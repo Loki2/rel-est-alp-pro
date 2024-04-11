@@ -34,7 +34,7 @@ const ItemCard = ({ item }) => {
             <BsStarFill className='rate__content__icon' />
             <BsStarFill className='rate__content__icon' />
             <BsStarHalf className='rate__content__icon' />
-            <BsStar />
+            <BsStar className='rate__content__icon' />
           </div>
 
           <div className="type__content">
